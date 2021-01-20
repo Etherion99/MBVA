@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Inicio : MonoBehaviour
 {
-    public Camera camara1, camara2;
+    public Camera camara1, camara2, camara3;
 
     void Start()
     {
@@ -26,12 +26,21 @@ public class Inicio : MonoBehaviour
         camara1.GetComponent<AudioListener>().enabled = false;
     }
 
-    public void info1()
+    public void back()
     {
         camara1.enabled = true;
         camara2.enabled = false;
 
         camara1.GetComponent<AudioListener>().enabled = true;
         camara2.GetComponent<AudioListener>().enabled = false;
+    }
+
+    public void next()
+    {
+        camara3.enabled = true;
+        camara1.enabled = false;
+
+        camara3.GetComponent<AudioListener>().enabled = true;
+        camara1.GetComponent<AudioListener>().enabled = false;
     }
 }
