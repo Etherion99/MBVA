@@ -1,0 +1,3 @@
+Nombre Doctor/a: Sebastian 	Puntaje: 200
+Nombre Doctor/a: Alvaro 	Puntaje: 120
+ 
